@@ -1,0 +1,119 @@
+/*  Nav menu color  */
+.bg-dark {
+  background-color: #343434 !important;
+}
+
+/*  Basics for all pages  */
+body {
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Intro on index.html  */
+.intro-image img {
+  width: 200px;
+  padding: 20px;
+}
+
+.intro-image {
+  float: left;
+}
+
+.intro-grid {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid white;
+}
+
+.intro-item p {
+  text-align: center;
+}
+
+/*  Photos in portfolio.html  */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  padding-bottom: 50px;
+  border-bottom: 3px solid white;
+}
+
+.photo-item img {
+  max-width: 100%;
+}
+
+.photo-item:hover img {
+  opacity: .75;
+}
+
+/*  Examples given on index.html  */
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  padding-bottom: 50px;
+  border-bottom: 3px solid white;
+}
+
+.example img {
+  max-width: 100%;
+}
+
+/* Reviews on reviews.html */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: left;
+  padding-bottom: 50px;
+  padding-left: 3rem;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+
+.review-text p {
+  text-align: left;
+}
+
+.reviewer-name {
+  text-align: right;
+}
+
+.review {
+  padding: 15px;
+  background-color: #191970;
+}
+
+/*  Mobile/small window handling  */
+@media only screen and (max-width: 520px) {
+  .photo-grid {
+    grid-template-columns: auto;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+
+  .examples-grid {
+    grid-template-columns: auto;
+  }
+}
+
+/*  Footer with github link  */
+.footer {
+  background-color: #343434;
+}
