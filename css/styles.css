@@ -3,6 +3,33 @@
   background-color: #343434 !important;
 }
 
+.navbar-nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-item {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  justify-items: center;
+}
+
+.nav-item-text {
+  text-align: center;
+}
+
+.nav-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75px;
+}
+
+.titanlogo img {
+  max-width: 65px;
+}
+
 /*  Basics for all pages  */
 body {
   padding: 1rem;
@@ -11,13 +38,13 @@ body {
   font-size: 25px;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
 }
 
 /* Intro on index.html  */
 .intro-image img {
-  width: 200px;
+  max-width: 480px;
   padding: 20px;
 }
 
@@ -55,9 +82,9 @@ h1 {
 }
 
 /*  Examples given on index.html  */
-.examples-grid {
+.elementals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-items: center;
@@ -65,8 +92,16 @@ h1 {
   border-bottom: 3px solid white;
 }
 
-.example img {
+.elemental {
+  padding: 20px;
+}
+
+.elemental img {
   max-width: 100%;
+}
+
+.elemental:hover img {
+  opacity: .75;
 }
 
 /* Reviews on reviews.html */
@@ -96,6 +131,26 @@ h1 {
   background-color: #191970;
 }
 
+.build {
+  display: grid;
+  justify-items: center;
+}
+
+.build .description {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.build img {
+  margin: auto;
+  max-width: 75%;
+}
+
+.build p {
+   text-align: left;
+   color: #F3E5AB
+}
+
 /*  Mobile/small window handling  */
 @media only screen and (max-width: 520px) {
   .photo-grid {
@@ -108,12 +163,13 @@ h1 {
     justify-items: center;
   }
 
-  .examples-grid {
+  .elementals-grid {
     grid-template-columns: auto;
   }
 }
 
 /*  Footer with github link  */
 .footer {
+  font-size: 15px;
   background-color: #343434;
 }
