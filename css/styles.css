@@ -60,6 +60,7 @@ h1, h2, h3 {
 
 .intro-item p {
   text-align: left;
+  font-size: 2vw;
 }
 
 /*  Photos in portfolio.html  */
@@ -141,6 +142,7 @@ h1, h2, h3 {
 .build .description {
   padding-left: 45px;
   padding-right: 45px;
+  font-size: 1.75vw;
 }
 
 .build img {
@@ -149,12 +151,12 @@ h1, h2, h3 {
 }
 
 .build p {
-   text-align: left;
-   color: #F3E5AB
+  text-align: left;
+  color: #F3E5AB
 }
 
 /*  Mobile/small window handling  */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 800px) {
   .photo-grid {
     grid-template-columns: auto;
   }
@@ -167,6 +169,14 @@ h1, h2, h3 {
 
   .elementals-grid {
     grid-template-columns: auto;
+  }
+
+  .build .description {
+    font-size: 16px;
+  }
+
+  .intro-item p {
+    font-size: 20px;
   }
 }
 
