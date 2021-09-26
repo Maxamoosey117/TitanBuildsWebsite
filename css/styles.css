@@ -59,7 +59,7 @@ h1, h2, h3 {
 }
 
 .intro-item p {
-  text-align: center;
+  text-align: left;
 }
 
 /*  Photos in portfolio.html  */
@@ -134,6 +134,8 @@ h1, h2, h3 {
 .build {
   display: grid;
   justify-items: center;
+  padding-bottom: 45px;
+  border-bottom: 3px solid white;
 }
 
 .build .description {
